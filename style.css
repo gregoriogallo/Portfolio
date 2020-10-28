@@ -1,0 +1,421 @@
+body {
+    background-color:#EEF2F7;
+}
+h1, h2, h3, h4, p{
+    font-family: 'Poppins', sans-serif; 
+}
+h1{
+    font-weight: 600;
+}
+h2{
+
+    font-weight: 900;
+}
+h3{
+    font-weight: bold;
+}
+h4{
+    font-weight: 700;
+    line-height: 50px;
+}
+p{
+    font-weight: 900;
+}
+.overlay {
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+    opacity: 0.6;
+    position: absolute;
+}
+.video {
+height: 300px;
+object-fit: cover;
+width: 100%;
+z-index: -1;
+}
+.navbar{
+    background-color: black;
+    border-top: 2px solid rgb( 202,247,230);
+}
+.titlesymbols {
+  padding: 20px 30px;
+  
+}
+.textsymbols{
+text-align: center;
+padding: 0px 50px;
+display: none;
+overflow: hidden;
+}
+
+.textsymbols, .card {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+  
+  
+
+  background: white;
+  border-radius: 5px;
+}
+
+
+
+
+
+.presentation{
+    z-index: 2;
+    color: rgb( 202,247,230);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    
+}
+.presentationtext{
+    text-shadow: none;
+   text-align: center;
+   padding-top: 20px;
+}
+
+.about_mebutton {
+    width: 20%;
+    border: 2px solid rgb( 202,247,230);
+    color:rgb( 202,247,230);
+margin-top: 30px;
+white-space: nowrap;
+}
+.about_mebutton:hover {
+    color: white;
+    background-color: rgb(243, 116,10);
+    border: 2px solid rgb( 202,247,230);
+}
+
+.list-group-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-group-item{
+border: none;
+text-align: center;
+background-color: transparent;
+
+}
+
+.symbol{
+color: #FFC837;
+background: url(rounded-black-square-shape.png);
+background-size: 100px 100px;
+width: 100px;
+height: 100px;
+padding-top: 20px;
+margin: auto auto;
+margin-top: 100px;
+cursor: pointer;
+}
+.symbol:hover{
+background: radial-gradient(circle at bottom center, #FFC837 15px, #FF8008);
+color:black;
+border-radius: 20px 20%;
+}
+.symbol
+{
+  position: relative;
+}
+.symbol:before, .symbol:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: rgb(0, 0, 0);
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px rgb(0, 0, 0);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.symbol:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.appear{
+  display: flex;
+  overflow: hidden;
+}
+/*carousel*/
+carousel-control-next{
+  
+}
+.carousel {
+  display: flex;
+  height: 300px;
+}
+.aboutmetext{
+  border: 2px solid black;
+  padding: 1em;
+  height: 300px;
+}
+
+/*aboutmesetion*/
+.circle{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    
+}
+.profilo {
+    width: 150px;
+    height: 150px;
+}
+.myfoto{
+    width: auto;
+    height: auto;
+}
+.aboutmetitle {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.developertext{
+    border: 2px solid black;
+    padding: 1em;
+}
+
+.downarrow{
+margin: auto;
+display: flex;
+justify-content: center;
+margin-bottom: 70px;
+}
+.uparrow{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.tohide{
+    margin: 0;
+    display: flex;
+  
+    
+}
+/*footer*/
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .video-container {
+      height: 200px;
+    }
+    .presentation-1{
+        top: 20%;
+        left: 0%;
+    }
+    .about_mebutton{
+        /*white-space: nowrap;*/
+    }
+  }
+  
+  @media only screen and (max-width: 1007px) {
+    #textlist {
+        display: none;
+    }
+}
