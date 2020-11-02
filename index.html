@@ -15,7 +15,7 @@ crossorigin="anonymous">
 
 </head>
 <body>
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0" id="menu">
 <div class="page-header">
 <div class="video-container " style="height: 300px; overflow: hidden;">
   <div class="overlay"></div>
@@ -24,14 +24,11 @@ crossorigin="anonymous">
   </video>
   <div class="presentation">
   <h1 class="presentationtext">Gregorio Gallo</h1>
-  <h2 class="presentationtext">Web-developer</h2>
-  <a href="#aboutmetitle">
-  <button class="about_mebutton btn" id="aboutmebutton"  value="aboutmebutton">About me</button>
-  </a>
+  <h2 class="presentationtext">Front-end developer</h2>
   </div>
 </div>
     <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,30 +36,27 @@ crossorigin="anonymous">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#menu">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#aboutmetitle">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Portfolio
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Project 1 </a>
-                <a class="dropdown-item" href="#">Project 2</a>
+                <a class="dropdown-item" href="../calculator/index.html"><p>Calculator</p></a>
+                <a class="dropdown-item" href="../tic tac toe/index.html"><p>Tic Tac Toe</p></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Contacts</a>
+                <a class="dropdown-item" href="#site-footer"><p>Contacts</p></a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#"></a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          
         </div>
       </nav>
 </div>
@@ -71,7 +65,7 @@ crossorigin="anonymous">
 </div>
 
 
-  <ul class="list-group-row p-0" id="ulsymbols">
+  <ul class="listqualities list-group-row p-0 " id="ulsymbols">
 <li class="list-group-item col-lg-3 col-md-6 col-sm-12">
   
     <div class="symbol" id="symbol1">
@@ -82,7 +76,7 @@ crossorigin="anonymous">
       </div>
     </div>
     <h2 class="titlesymbols">Perfection</h2>
-    <div class="textsymbols" id="textsymbols1"><h4>I handle every single detail with accuracy in order to deliver better results</h4>
+    <div class="textsymbols" id="textsymbols1">As a perfectionist, I have an eye for detail and handle every single <a  href="#projectstitle">project</a> with care. I regard accuracy as an important value in web development since a correct and clear presentation of information will make the actual content of a website stand out.
     </div>
 </li>
 <li class="list-group-item col-lg-3 col-md-6 col-xs-12">
@@ -92,7 +86,7 @@ crossorigin="anonymous">
     </svg>
   </div>
   <h2 class="titlesymbols">Responsivity</h2>
-    <h4 class="textsymbols" id="textsymbols2">I believe in a smart and smooth responsivness to embrace all devices</h4>
+    <div class="textsymbols" id="textsymbols2">I believe in a smart and smooth responsive design that embraces all web browsers and works well on all devices. Good responsiveness, as well as an easily understandable design, makes a website more interactive and enhances the user experience</div>
 </li>
   <li class="list-group-item col-lg-3 col-md-6 col-xs-12">
     <div class="symbol" id="symbol3">
@@ -100,8 +94,8 @@ crossorigin="anonymous">
         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
       </svg>
     </div>
-    <h2 class="titlesymbols">Alive</h2>
-    <h4 class="textsymbols" id="textsymbols3">UI Design that has is own life, appealing to the eye and also user-friendly</h4>
+    <h2 class="titlesymbols">Liveliness</h2>
+    <div class="textsymbols" id="textsymbols3">User interface design should not only be user-friendly and appealing to the eye but also needs to be lively. Animations bring a website alive and make its content more salient. A clear interface makes it easier for the user to find certain information.</div>
 </li> 
   <li class="list-group-item col-lg-3 col-md-6 col-xs-12">
     <div class="symbol" id="symbol4" >
@@ -109,8 +103,8 @@ crossorigin="anonymous">
         <path fill-rule="evenodd" d="M3.112 3.645A1.5 1.5 0 0 1 4.605 2H7a.5.5 0 0 1 .5.5v.382c0 .696-.497 1.182-.872 1.469a.459.459 0 0 0-.115.118.113.113 0 0 0-.012.025L6.5 4.5v.003l.003.01c.004.01.014.028.036.053a.86.86 0 0 0 .27.194C7.09 4.9 7.51 5 8 5c.492 0 .912-.1 1.19-.24a.86.86 0 0 0 .271-.194.213.213 0 0 0 .036-.054l.003-.01v-.008a.112.112 0 0 0-.012-.025.459.459 0 0 0-.115-.118c-.375-.287-.872-.773-.872-1.469V2.5A.5.5 0 0 1 9 2h2.395a1.5 1.5 0 0 1 1.493 1.645L12.645 6.5h.237c.195 0 .42-.147.675-.48.21-.274.528-.52.943-.52.568 0 .947.447 1.154.862C15.877 6.807 16 7.387 16 8s-.123 1.193-.346 1.638c-.207.415-.586.862-1.154.862-.415 0-.733-.246-.943-.52-.255-.333-.48-.48-.675-.48h-.237l.243 2.855A1.5 1.5 0 0 1 11.395 14H9a.5.5 0 0 1-.5-.5v-.382c0-.696.497-1.182.872-1.469a.459.459 0 0 0 .115-.118.113.113 0 0 0 .012-.025L9.5 11.5v-.003l-.003-.01a.214.214 0 0 0-.036-.053.859.859 0 0 0-.27-.194C8.91 11.1 8.49 11 8 11c-.491 0-.912.1-1.19.24a.859.859 0 0 0-.271.194.214.214 0 0 0-.036.054l-.003.01v.002l.001.006a.113.113 0 0 0 .012.025c.016.027.05.068.115.118.375.287.872.773.872 1.469v.382a.5.5 0 0 1-.5.5H4.605a1.5 1.5 0 0 1-1.493-1.645L3.356 9.5h-.238c-.195 0-.42.147-.675.48-.21.274-.528.52-.943.52-.568 0-.947-.447-1.154-.862C.123 9.193 0 8.613 0 8s.123-1.193.346-1.638C.553 5.947.932 5.5 1.5 5.5c.415 0 .733.246.943.52.255.333.48.48.675.48h.238l-.244-2.855z"/>
       </svg>
     </div>
-    <h2 class="titlesymbols">Solutive</h2>
-    <h4 class="textsymbols" id="textsymbols4">Solving issues requires a lot of creativity, which is what every developer needs</h4>
+    <h2 class="titlesymbols">Creativity</h2>
+    <h4 class="textsymbols" id="textsymbols4">Solving issues requires a lot of creativity, which every web developer needs. Problem-solving skills and out of the box ideas make a website both visually attractive and prevent bugs from happening. Testing and debugging is thus part of the design process</h4>
 </li>
   </ul>
   
@@ -119,24 +113,76 @@ crossorigin="anonymous">
 
 
 <!-- end container -->
+
 <h1 class="aboutmetitle" id="aboutmetitle">About me</h1>
-    <div class="aboutmetext col-lg-12 col-md-6">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia incidunt vel saepe debitis reiciendis perferendis assumenda illum explicabo, quae doloribus totam, enim distinctio similique mollitia fuga! Commodi sint illo quod!</p>
+    
+  
+
+
+  
+   
+<ul class="centerBox list-group-row p-0">
+
+	<div class="categoryWrapper col-lg-4 col-md-12 col-sm-12">
+		<h1>My story</h1>
+		<button>
+			<span>
+				<span>
+					<span data-attr-span="">
+						My name is Gregorio Gallo. I was born and raised in Prato (Italy, Tuscany) and moved to Florence to start my career at the age of nineteen. A few years later and many experiences richer, I decided that it was time for a next step. I did not hesitate a moment, packed my suitcase and move to Amsterdam, ready for a new adventure abroad. With hindsight, this has been one of the best decisions of my life.
+					</span>
+				</span>
+			</span>
+    </button>
     </div>
-  </div>
+	
+ 
+<div class="categoryWrapper col-lg-4 col-md-12 col-sm-12">
+  <h1>Now</h1>
+  <button>
+    <span>
+      <span>
+        <span data-attr-span="">
+          As a Supply Chain Specialist, I work for one of the greatest international companies in the treatment of cancer with cell therapy. My working experiences have taught me to work in an international team, to communicate professionally and transparently and to deliver the best results on time. After more than a year of working in the Netherlands, I am ready for a new experience in another field.
+        </span>
+      </span>
+    </span>
+  </button>
+</div>
+
+<li class="categoryWrapper col-lg-4 col-md-12 col-sm-12 ">
+  <h1>My goal</h1>
+  <button>
+    <span>
+      <span>
+        <span data-attr-span="">
+          What started as a hobby, turned out into a great passion: web development. In the last months, my free time has been devoted to learning new programming languages and to growing as a web designer. Now that I have learned the main languages (HTML, CSS, JavaScript and a few of its libraries), I am ready to start working as a web developer and learn even more.
+        </span>
+      </span>
+    </span>
+  </button>
+</li>
+
+</ul>
+
+
+
 
 <!-- /.carousel -->
 <div class="container">
+  <div class="title"><h1 class="title" id="projectstitle">My Projects</h1></div>
 
-  <div class="card-list" id="toshow">
+  <div class="card-list d-flex justify-content-center" id="toshow">
     <ul class="list-group-row p-0">
     <li class="list-group-item col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" > 
       <div class="card" style="width: 18rem">
         <img class="card-img-top" src="calculator.PNG" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h1 class="card-title">Calculator</h1>
+          <h3>HTML CSS JavaScript</h3>
+          <p class="card-text">The HTML and CSS got a bit more advanced, with a cleaner styling. Regarding the JavaScript, this project was a bit more challenging as well.
+          </p>
+          <a href="../calculator/index.html" class="btn btn-primary">Explore this project</a>
         </div>
       </div>
     </li> 
@@ -144,43 +190,47 @@ crossorigin="anonymous">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="tic tac toe.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h1 class="card-title">Tic Tac Toe</h1>
+          <h3>HTML CSS JavaScript</h3>
+          <p class="card-text">For my first serious project, I decided to create the famous game Tic-Tac-Toe. By means of HTML, CSS and JavaScript, I created a clear looking game with an easy to grasp interface.</p>
+          <a href="#" class="btn btn-primary">Explore this project</a>
         </div>
       </div>
     </li> 
   </ul>
 </div>
-  <div class="card-list" id="tohide">
+  <div class="card-list  justify-content-center" id="tohide">
     <ul class="list-group-row p-0">
     <li class="list-group-item col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="dev.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h1 class="card-title">Work in progress</h1>
+          <h3>lorem ipsum dolor</h3>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, fugit. Ullam quis et perspiciatis, libero, sint, similique alias quia.</p>
+          <a href="#" class="btn btn-primary">Explore this project</a>
         </div>
       </div>
     </li> 
     <li class="list-group-item col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" >
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="dev.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h1 class="card-title">Work in progress</h1>
+          <h3>lorem ipsum dolor</h3>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, fugit. Ullam quis et perspiciatis, libero, sint, similique alias quia.</p>
+          <a href="#" class="btn btn-primary">Explore this project</a>
         </div>
       </div>
     </li> 
   </ul>
+</div>
     <div class="uparrow" id="uparrow">
       <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill" fill="black" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
       </svg>
     </div>
-    </div>
+  
   
  
   <div class="downarrow" id="downarrow">
@@ -191,38 +241,34 @@ crossorigin="anonymous">
   
 
 </div>
-
+</body>
 
 
   <!-- Site footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <p class="text-justify">This<i> PORTFOLIO PAGE </i> was made starting from scratch, with the purpose of showing and developing my skills using HTML, CSS, JAVASCRIPT and some of their libraries, such as BOOTSTRAP and JQUERY. This page is not considered finished, but will always be a work in progress. If you want me to help you with a project, feel free to contact me at <i><a href="mailto:greggyga@hotmail.it"> greggyga@hotmail.it</a></i></p>
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
+          <h6>Contacts</h6>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            <li><a href="mailto:greggyga@hotmail.it">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/gregorio-gallo/">Linkedin</a></li>
+            <li><a href="https://github.com/gregoriogallo">github</a></li>
           </ul>
         </div>
 
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            <li><a href="#menu">Home</a></li>
+            <li><a href="#ulsymbols">Core Qualities</a></li>
+            <li><a href="#projectstitle">Projects</a></li>
+            <li><a href="#aboutmetitle">About</a></li>
           </ul>
         </div>
       </div>
@@ -231,18 +277,12 @@ crossorigin="anonymous">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-       <a href="#">Scanfcode</a>.
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+       <a href="#">Gregorio Gallo</a>.
           </p>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
         </div>
       </div>
     </div>
@@ -269,13 +309,14 @@ $( document ).ready(function() {
 $("#tohide").css({'display':'none'});
 $("#uparrow").css({'display':'none'})
  $("#downarrow").click(function(){
-     $("#tohide").show();
+     $("#tohide").css({'display': 'flex'});
      $("#downarrow").hide();
      $("#uparrow").show();
  });
 
 $("#uparrow").click(function(){
     $("#tohide").hide();
+    $("#uparrow").hide();
     $("#downarrow").show();
     $('html, body').animate({
         scrollTop: $("#toshow").offset().top
