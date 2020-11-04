@@ -430,7 +430,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
   font-size: 65px;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .developertext{
     border: 2px solid black;
@@ -457,10 +457,23 @@ margin-top: 10px;
   
     
 }
+.card-body {
+
+  border-top: 2px solid black;
+}
+.card-body a {
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
 .card-list{
   display: flex;
   
 }
+.card-text {
+  height: 144px;
+}
+
 /*footer*/
 .site-footer
 {
