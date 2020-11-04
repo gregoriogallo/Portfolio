@@ -642,11 +642,11 @@ margin-top: 10px;
 .ciao1 {
   display: flex;
 }
-.ciao2{
+.list-container-aboutme {
   padding: 0%;
   display: flex;
 }
-.oi{
+.items-aboutme{
   
   background-color: #000000;
   height: 500px;
@@ -654,7 +654,7 @@ margin-top: 10px;
   text-align: center;
   align-content: center;
 }
-.oi h1 {
+.items-aboutme h1 {
   position: absolute;
 	font-size: 50px;
 	letter-spacing: 2px;
@@ -666,19 +666,19 @@ margin-top: 10px;
   padding-bottom: 20px;
   
 }
-.oi:hover h1{
+.items-aboutme:hover h1{
   transform: translateY(-350%);
   z-index: 1;
   color: #000000;
   border-bottom: hidden;
 }
-.oi:hover{
+.items-aboutme:hover{
   background: radial-gradient(circle at bottom center, #FFC837 15px, #FF8008) ;
 }
-.oi:hover p {
+.items-aboutme:hover p {
   color: #000000;
 }
-.oi p{
+.items-aboutme p{
   font-weight: 700;
   color: black;
   font-size: 21px;
@@ -704,14 +704,14 @@ margin-top: 10px;
     .centerBox{
       height: 1800px;
     }
-    .oi p{
+    .items-aboutme p{
       font-size: 25px;
       line-height: 4.0vw;
     }
-    .oi {
+    .items-aboutme {
       height: 300px;
     }
-    .oi:hover h1 {
+    .items-aboutme:hover h1 {
       color: transparent;
     }
   }
@@ -727,13 +727,17 @@ margin-top: 10px;
     .about_mebutton{
         white-space: nowrap;
     }
-    .oi p{
+    .items-aboutme p{
       font-size: 25px;
       line-height: 7vw;
     }
-    .oi {
+    .items-aboutme {
       height: 500px;
     }
   }
-
-  
+  @media only screen and (max-width: 300px) {
+    .items-aboutme p{
+      font-size: 15px;
+      line-height: 10vw;
+    }
+  }
