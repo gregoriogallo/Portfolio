@@ -698,8 +698,7 @@ margin-top: 10px;
         display: none;
     }
     .card-list{
-      display: flex;
-      
+      display: flex;  
     }
     .centerBox{
       height: 1800px;
@@ -715,7 +714,28 @@ margin-top: 10px;
       color: transparent;
     }
   }
+  @media only screen and (min-width: 414px) and (max-width: 767px){
+    .video-container {
+      height: 200px;
+    }
+    .presentation-1{
+        top: 20%;
+        left: 0%;
+    }
+    .about_mebutton{
+        white-space: nowrap;
+    }
+    .items-aboutme p{
+      font-size: 25px;
+      line-height: 7vw;
+    }
+    .items-aboutme {
+      height: 500px;
+    }
 
+
+
+  }
   @media only screen and (max-width: 576px) {
     .video-container {
       height: 200px;
@@ -741,3 +761,4 @@ margin-top: 10px;
       line-height: 10vw;
     }
   }
+  
