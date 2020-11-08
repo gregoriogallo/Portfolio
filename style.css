@@ -639,9 +639,6 @@ margin-top: 10px;
   }
 }
 
-.ciao1 {
-  display: flex;
-}
 .list-container-aboutme {
   padding: 0%;
   display: flex;
@@ -685,6 +682,7 @@ margin-top: 10px;
   text-align: center;
   justify-content: center;
   line-height: 2.8vw;
+  margin-bottom: 10px;
 }
 
 
