@@ -48,6 +48,10 @@ z-index: -1;
     background-color: black;
     border-top: 2px solid rgb( 202,247,230);
 }
+
+.listqualities {
+  background-image: url(img/diamond-pattern.jpg);
+}
 .titlesymbols {
   padding: 20px 30px;
   
@@ -426,12 +430,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
     
 }
 
-.aboutmetitle, .title {
+.about-me-title, .title {
   font-size: 65px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+margin-bottom: 0%;  }
+
 .developertext{
     border: 2px solid black;
     padding: 1em;
@@ -686,7 +693,7 @@ margin-top: 10px;
 }
 
 
-
+@media only screen and (min-width: 1007px){
 
 
 
