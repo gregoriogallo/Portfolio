@@ -15,56 +15,62 @@ crossorigin="anonymous">
 
 </head>
 <body>
-  <div class="container-fluid p-0" id="menu">
-<div class="page-header">
-<div class="video-container " style="height: 300px; overflow: hidden;">
-  <div class="overlay"></div>
-  <video class="video d-block " playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="bubbles.mp4" type="video/mp4">
-  </video>
-  <div class="presentation">
-  <h1 class="presentationtext">Gregorio Gallo</h1>
-  <h2 class="presentationtext">Front-end developer</h2>
-  </div>
-</div>
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<div class="container-fluid p-0" id="menu">
+  <div class="page-header">
+    <div class="video-container " style="height: 300px; overflow: hidden;">
+      <div class="overlay"></div>
+        <video class="video d-block " playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="bubbles.mp4" type="video/mp4">
+        </video>
+        
+    <div class="presentation text-white">
+      <h3><big>Welcome to the Portfolio Page of Gregorio Gallo</big></h3>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+    <p class="ml-5 mr-5"><big>Expert in front-end web development and User Interface. I like to make things easy, minimal and interactive.</big> </p>
+  </div>
+    <div class="fullscreen-menu ml-4 mr-4">
+    <a class="nav-link text-white" href="#ulsymbols"><big>Qualities</big><span class="sr-only">(current)</span></a>
+    <a class="nav-link text-white" href="#aboutmetitle"><big>About</big></a>
+    <a class="nav-link text-white" href="#site-footer"><big>Contacts</big></a>
+    <a class="nav-link text-white" href="#projects"><big>Projects</big></a>
+  </div>
+  
+    </div>
+      <div class="navbar navbar-expand-md">
+        <a class="navbar-brand text-white" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+      </div>
+      
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#ulsymbols">Qualities<span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#ulsymbols"><big>Qualities</big><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutmetitle">About</a>
+              <a class="nav-link text-white" href="#aboutmetitle"><big>About</big></a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="calculator/index.html"><p>Calculator</p></a>
-                <a class="dropdown-item" href="tic tac toe/index.html"><p>Tic Tac Toe</p></a>
-              </div>
+            
+              
               <li class="nav-item">
               
-              <a class="nav-link" href="#site-footer">Contacts</a>
+              <a class="nav-link text-white" href="#site-footer"><big>Contacts</big></a>
               </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"></a>
+              <a class="nav-link text-white" href="#projects"><big>Projects</big></a>
             </li>
           </ul>
           
         </div>
-      </nav>
+      </nav> 
+      </div>
+    </div>
+  </div>
 </div>
-
-
-</div>
+    
+  
 
 
   <ul class="listqualities list-group-row p-0 m-0" id="ulsymbols">
@@ -80,7 +86,7 @@ crossorigin="anonymous">
     <h2 class="titlesymbols">
       Perfection
     </h2>
-    <div class="textsymbols" id="textsymbols1">As a perfectionist, I have an eye for detail and handle every single <a  href="#projectstitle">project</a> with care. I regard accuracy as an important value in web development since a correct and clear presentation of information will make the actual content of a website stand out
+    <div class="textsymbols" id="textsymbols1"><p>As a perfectionist, I have an eye for detail and handle every single <a  href="#projectstitle">project</a> with care. I take into account <p>UI Design</p> as an important asset in web development since a correct and clear presentation of information will make the actual content of a website stand out</p>
     </div>
 </li>
 <li class="list-group-item col-lg-3 col-md-6 col-xs-12">
@@ -118,7 +124,7 @@ crossorigin="anonymous">
 
 <!-- end container -->
 
-<h1 class="about-me-title border-top m-top-10" id="aboutmetitle" >About me</h1>
+<h1 class="about-me-title border-top " id="aboutmetitle" >About me</h1>
     
   
 
@@ -328,7 +334,11 @@ $("#symbol4").click(function(){
         }, 500);
 
 });
-
+$('#navigation').affix({
+  offset: {
+    top: 50
+  }
+});
 }); 
 
 </script>

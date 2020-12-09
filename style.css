@@ -20,12 +20,33 @@ h4{
 p{
     font-weight: 900;
 }
+.bold{
+  font-weight: bold;
+}
 .presentation{
   display: flex;
-  align-items: center;
   flex-direction: column;
- 
   justify-content: center;
+    z-index: 1;
+    color: rgb( 202,247,230);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 300px;
+    text-align: center;  
+}
+.fullscreen-menu{
+  z-index: 1;
+  color: rgb( 202,247,230);
+  position: absolute;
+  top: 250px;
+  width:100%;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .overlay {
@@ -38,19 +59,49 @@ p{
     opacity: 0.6;
     position: absolute;
 }
+
 .video {
 height: 300px;
 object-fit: cover;
 width: 100%;
 z-index: -1;
 }
+
 .navbar{
-    background-color: black;
-    border-top: 2px solid rgb( 202,247,230);
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-top: -60px;
+  z-index: 10;
+  
+}
+.nav-link{
+  text-decoration: none;
+}
+  
+
+.navbar-nav > li{
+margin-left: 40px;
+margin-right: 40px;
+}
+.navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=ffffff');
+}
+.navbar-collapse{
+  background-color: rgb(2, 0, 0);
+  
+  
 }
 
+.list-group-item{
+  padding-bottom: 80px;
+}
 .listqualities {
   background-image: url(img/diamond-pattern.jpg);
+  z-index: -10;
+
 }
 .titlesymbols {
   padding: 20px 30px;
@@ -79,21 +130,6 @@ line-height: 50px;
   border-radius: 5px;
 }
 
-
-
-
-
-.presentation{
-    z-index: 2;
-    color: rgb( 202,247,230);
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    
-}
 .presentationtext{
     text-shadow: none;
   text-align: center;
@@ -349,7 +385,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
 	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
 }
 
-/* */
+/**/
 
 .categoryWrapper button > span > span:before{
 	content:'';
@@ -401,7 +437,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
 
 .categoryWrapper:hover button > span > span > span{
   color:#000000;
-  z-index: ;
+  
 }
 
 .categoryWrapper button > span > span > span:after{
@@ -563,17 +599,7 @@ margin-top: 10px;
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
+
 .social-icons
 {
   padding-left:0;
@@ -636,15 +662,7 @@ margin-top: 10px;
 {
   background-color:#ea4c89
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
+
 
 .list-container-aboutme {
   padding: 0%;
@@ -692,6 +710,33 @@ margin-top: 10px;
   margin-bottom: 10px;
 }
 
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+ .fullscreen-menu{
+   display: none;
+ }
+}
+@media (min-width:768px){
+  .navbar-brand{
+    display: none;
+  }
+  
+
+}
 
 @media only screen and (min-width: 1007px){
 
@@ -727,6 +772,7 @@ margin-top: 10px;
         top: 20%;
         left: 0%;
     }
+    
     .about_mebutton{
         white-space: nowrap;
     }
@@ -766,4 +812,6 @@ margin-top: 10px;
       line-height: 10vw;
     }
   }
+  
+
   
