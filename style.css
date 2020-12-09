@@ -501,9 +501,23 @@ margin-top: 10px;
   
     
 }
-.card-body {
+.card{
+  border-radius: 20px;
+}
+.card-title{
+background-image: url(https://picsum.photos/400/200);
+height: 200px;
+width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
 
-  border-top: 2px solid black;
+}
+.card-body {
+width: 400px;
+
 }
 .card-body a {
   font-weight: 700;
@@ -515,7 +529,7 @@ margin-top: 10px;
   
 }
 .card-text {
-  height: 144px;
+  
 }
 
 /*footer*/
