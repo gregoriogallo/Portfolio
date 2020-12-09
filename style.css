@@ -1,27 +1,28 @@
 * {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;}
+  }
   body {
     background-color:#EEF2F7;
 }
 h1{
-    font-weight: 600;
+    font-weight: 300;
 }
 h2{
-    font-weight: 900;
+    font-weight: 300;
 }
 h3{
     font-weight: bold;
 }
 h4{
-    font-weight: 700;
+    font-weight: 300;
     line-height: 50px;
 }
 p{
-    font-weight: 900;
+    font-weight: 300;
 }
 .bold{
   font-weight: bold;
+  
 }
 .presentation{
   display: flex;
@@ -41,12 +42,12 @@ p{
   color: rgb( 202,247,230);
   position: absolute;
   top: 250px;
-  width:100%;
-  padding-right: 50px;
+  width: 500px;
   display: flex;
   flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  left: 50% ;
+  margin-left: -250px;
 }
 
 .overlay {
@@ -466,8 +467,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
     
 }
 
-.about-me-title, .title {
-  font-size: 65px;
+.title, .title {
+  font-size: 300%;
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -678,36 +679,36 @@ margin-top: 10px;
 }
 .items-aboutme h1 {
   position: absolute;
-	font-size: 50px;
+	font-size: 40px;
 	letter-spacing: 2px;
 	-webkit-transition: all 0.45s ease 0s; 
 	margin-top: 50%-35px;
   align-self: center;
-  color: #FFC837;
-  border-bottom: 3px solid #FFC837;
+  color: #f6d365;
+  border-bottom: 3px solid #f6d365;
   padding-bottom: 20px;
   
 }
 .items-aboutme:hover h1{
-  transform: translateY(-350%);
+  transform: translateY(-250%);
   z-index: 1;
   color: #000000;
   border-bottom: hidden;
 }
 .items-aboutme:hover{
-  background: radial-gradient(circle at bottom center, #FFC837 15px, #FF8008) ;
+  background: linear-gradient(120deg, #fdfbfb 0%, #e2ebf0 100%);
+  border: 2px solid black;
 }
 .items-aboutme:hover p {
-  color: #000000;
+  color: #1e1e1e;
 }
 .items-aboutme p{
-  font-weight: 700;
-  color: black;
-  font-size: 21px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-size: 120%;
   text-align: center;
   justify-content: center;
-  line-height: 2.8vw;
-  margin-bottom: 10px;
+  margin-top: 20%;
 }
 
 @media (max-width:767px)
@@ -726,9 +727,7 @@ margin-top: 10px;
     margin-right:0;
     font-weight:600
   }
- .fullscreen-menu{
-   display: none;
- }
+ 
 }
 @media (min-width:768px){
   .navbar-brand{
@@ -737,8 +736,12 @@ margin-top: 10px;
   
 
 }
+@media (max-width:768px){
+  .fullscreen-menu{
+    display: none;
+  }
+}
 
-@media only screen and (min-width: 1007px){
 
 
 
@@ -753,16 +756,6 @@ margin-top: 10px;
     .centerBox{
       height: 1800px;
     }
-    .items-aboutme p{
-      font-size: 25px;
-      line-height: 4.0vw;
-    }
-    .items-aboutme {
-      height: 300px;
-    }
-    .items-aboutme:hover h1 {
-      color: transparent;
-    }
   }
   @media only screen and (min-width: 414px) and (max-width: 767px){
     .video-container {
@@ -776,16 +769,6 @@ margin-top: 10px;
     .about_mebutton{
         white-space: nowrap;
     }
-    .items-aboutme p{
-      font-size: 25px;
-      line-height: 7vw;
-    }
-    .items-aboutme {
-      height: 550px;
-    }
-
-
-
   }
   @media only screen and (max-width: 576px) {
     .video-container {
@@ -798,20 +781,9 @@ margin-top: 10px;
     .about_mebutton{
         white-space: nowrap;
     }
-    .items-aboutme p{
-      font-size: 25px;
-      line-height: 7vw;
-    }
-    .items-aboutme {
-      height: 500px;
-    }
+    
   }
-  @media only screen and (max-width: 300px) {
-    .items-aboutme p{
-      font-size: 15px;
-      line-height: 10vw;
-    }
-  }
+  
   
 
   
