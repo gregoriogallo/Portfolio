@@ -105,12 +105,11 @@ margin-right: 40px;
 
 }
 .titlesymbols {
-  padding: 20px 30px;
+  padding: 15px 20px;
   
 }
 .textsymbols{
-text-align: center;
-padding: 0px 25px;
+padding: 0px 15px;
 display: none;
 overflow: hidden;
 font-size: 20px;
@@ -467,15 +466,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
     
 }
 
-.title, .title {
+.title {
   font-size: 300%;
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-
 margin-bottom: 0%;  }
-
+.title1 {
+    font-size: 300%;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 0%;  }
 .developertext{
     border: 2px solid black;
     padding: 1em;
@@ -505,9 +508,9 @@ margin-top: 10px;
   border-radius: 20px;
 }
 .card-title{
-background-image: url(https://picsum.photos/400/200);
+background-image: url(https://picsum.photos/300/200);
 height: 200px;
-width: 400px;
+width: 300px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -515,8 +518,11 @@ border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 
 }
+.list-group-item{
+
+}
 .card-body {
-width: 400px;
+width: 300px;
 
 }
 .card-body a {
