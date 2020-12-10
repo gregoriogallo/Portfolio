@@ -70,8 +70,8 @@ crossorigin="anonymous">
       </nav> 
       </div>
     
-  
->
+  <div class="barrier"></div>
+
     
   
 
@@ -167,7 +167,7 @@ crossorigin="anonymous">
     <li class="list-group-item col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" > 
       <div class="card p-0" style="width: 300px">
         <div class="card-body p-0">
-          <h1 class="card-title">Calculator</h1>
+          <h1 class="card-title" style="background-image: url(/img/calculator.jpg);">Calculator</h1>
             <p class="card-text p-2 ml-1 mr-1">A classic starter. Here I learned some of the basics of plain javascript, with a clean stylying. It has the basic functionalities and it can also change operator even if the wrong one is pressed.
             </p>
           <a href="https://gregoriogallo.github.io/Calculator/" class="btn btn-success">Check me</a>
@@ -178,9 +178,11 @@ crossorigin="anonymous">
     <li class="list-group-item list-group-item col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" id="cardlist">
       <div class="card" style="width: 300px">
           <div class="card-body p-0">
-            <h1 class="card-title">Tic Tac Toe</h1>
+          <div class="card-title">
+              <h1 class="card-title" style="background-image: url(/img/tic-tac-toe.jpg);">Tic Tac Toe</h1>
+          </div>
             <p class="card-text  p-2 ml-1 mr-1">For my first serious project, I decided to create the famous game Tic-Tac-Toe. By means of HTML, CSS and JavaScript, I created a clear looking game with an easy to grasp interface.</p>
-          <a href="tic tac toe/index.html" class="btn btn-primary">Explore this project</a>
+          <a href="tic tac toe/index.html" class="btn btn-success">Check me</a>
         </div>
       </div>
     </li> 
@@ -194,9 +196,9 @@ crossorigin="anonymous">
       <div class="card" style="width: 300px">
         
         <div class="card-body p-0">
-          <h1 class="card-title">Work in progress</h1>
-          <p class="card-text  p-2 ml-1 mr-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, fugit. Ullam quis et perspiciatis, libero, sint, similique alias quia.</p>
-          <a href="#" class="btn btn-primary">Explore this project</a>
+          <h1 class="card-title" style="background-image: url(/img/todolist.jpg);">To do list</h1>
+          <p class="card-text  p-2 ml-1 mr-1">A to do list, with basic functionalities that saves the data in a local storage. A simple project to test my competences with React.</p>
+          <a href="#" class="btn btn-success">Check me</a>
         </div>
       </div>
     </li> 
@@ -206,7 +208,7 @@ crossorigin="anonymous">
         <div class="card-body p-0">
           <h1 class="card-title">Work in progress</h1>
           <p class="card-text  p-2 ml-1 mr-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, fugit. Ullam quis et perspiciatis, libero, sint, similique alias quia.</p>
-          <a href="#" class="btn btn-primary">Explore this project</a>
+          <a href="#" class="btn btn-danger">not yet</a>
         </div>
       </div>
     </li> 
@@ -307,34 +309,30 @@ $("#uparrow").click(function(){
 $("#symbol1").click(function(){
   $("#textsymbols1").slideToggle('appear');
   $('html, body').animate({
-        scrollTop: $("#symbol1").offset().top -20
+        scrollTop: $("#symbol1").offset().top -40
         }, 500);
         
 })
 $("#symbol2").click(function(){
   $("#textsymbols2").slideToggle('appear');
   $('html, body').animate({
-        scrollTop: $("#symbol2").offset().top -20
+        scrollTop: $("#symbol2").offset().top -40
         }, 500);
 })
 $("#symbol3").click(function(){
   $("#textsymbols3").slideToggle('appear');
   $('html, body').animate({
-        scrollTop: $("#symbol3").offset().top -20
+        scrollTop: $("#symbol3").offset().top -40
         }, 500);
 })
 $("#symbol4").click(function(){
   $("#textsymbols4").slideToggle('appear');
   $('html, body').animate({
-        scrollTop: $("#symbol4").offset().top -20
+        scrollTop: $("#symbol4").offset().top -40
         }, 500);
 
 });
-$('#navigation').affix({
-  offset: {
-    top: 50
-  }
-});
+
 }); 
 
 </script>

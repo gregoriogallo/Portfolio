@@ -95,13 +95,16 @@ margin-right: 40px;
   
   
 }
-
+.barrier{
+  height: 44px;
+}
 .list-group-item{
   padding-bottom: 80px;
 }
 .listqualities {
   background-image: url(img/diamond-pattern.jpg);
   z-index: -10;
+  margin-top: 400px;
 
 }
 .titlesymbols {
@@ -508,7 +511,7 @@ margin-top: 10px;
   border-radius: 20px;
 }
 .card-title{
-background-image: url(https://picsum.photos/300/200);
+
 height: 200px;
 width: 300px;
 display: flex;
@@ -516,7 +519,8 @@ justify-content: center;
 align-items: center;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
-
+color:white;
+margin-bottom: 0%;
 }
 .list-group-item{
 
