@@ -511,7 +511,7 @@ margin-top: 10px;
   border-radius: 20px;
 }
 .card-title{
-
+background-color: black;
 height: 200px;
 width: 300px;
 display: flex;
@@ -522,8 +522,11 @@ border-top-right-radius: 20px;
 color:white;
 margin-bottom: 0%;
 }
-.list-group-item{
 
+.titlecard{
+  background-color: rgba(0, 0, 0, 0.483);
+  padding: 10px;
+  border-radius: 20px;
 }
 .card-body {
 width: 300px;
@@ -694,7 +697,6 @@ width: 300px;
   display: flex;
 }
 .items-aboutme{
-  
   background-color: #000000;
   height: 500px;
   justify-content: center;
@@ -714,7 +716,7 @@ width: 300px;
   
 }
 .items-aboutme:hover h1{
-  transform: translateY(-250%);
+  transform: translateY(-230%);
   z-index: 1;
   color: #000000;
   border-bottom: hidden;
