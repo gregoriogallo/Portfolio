@@ -753,7 +753,14 @@ width: 300px;
     margin-right:0;
     font-weight:600
   }
- 
+  .items-aboutme p{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 110%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+}
 }
 @media (min-width:768px){
   .navbar-brand{
