@@ -541,10 +541,20 @@ width: 300px;
   display: flex;
   
 }
-.card-text {
-  
+.site{
+  color: white ;
+  background-color: black;
 }
-
+.site:hover{
+  background: radial-gradient(circle at bottom center, #FFC837 15px, #FF8008);
+}
+.sitenotready {
+  background-color: black;
+  color: white;
+}
+.sitenotready:hover {
+  color: white;
+}
 /*footer*/
 .site-footer
 {
