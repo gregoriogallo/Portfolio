@@ -493,14 +493,18 @@ display: flex;
 justify-content: center;
 margin-bottom: 70px;
 margin-top: 10px;
+
 }
 .uparrow{
     margin: auto;
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
+  
 }
-
+.bi-arrow-down-circle-fill, .bi-arrow-up-circle-fill{
+  cursor: pointer;
+}
 .tohide{
     margin: 0;
     display: flex;
